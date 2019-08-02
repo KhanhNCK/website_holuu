@@ -15,6 +15,26 @@
   margin-bottom: 20px;
   text-align: center;
 }
+/*  icon share */
+.icon-share{
+  display: flex;
+  margin-top: -47px;
+  margin-bottom: 30px;
+}
+.icon-share p{
+  margin-right: 10px;
+  line-height: 35px;
+}
+.icon-share span{
+  font-size: 25px;
+  margin-right: 20px;
+  color: gray;
+}
+
+.icon-share span:hover{
+  color: red;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;

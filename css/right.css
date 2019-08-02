@@ -96,7 +96,7 @@
       text-transform: uppercase;
       font-weight: 700;
       border-radius: 5px;
-      top: -6px; }
+      top: -5px; }
   .banner-right .lienket {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -118,7 +118,7 @@
         text-transform: uppercase;
         font-weight: 700;
         border-radius: 5px;
-        top: -2px; }
+        top: -1px; }
     .banner-right .lienket .scroll {
       overflow: hidden;
       overflow-y: scroll;
@@ -136,7 +136,10 @@
         font-weight: 400px;
         font-size: 14px;
         color: #333333;
-        text-decoration: none; }
+         }
+         .banner-right .lienket .scroll ul a{
+          text-decoration: none;
+         }
       .banner-right .lienket .scroll ul li:hover {
         color: #fe0002;
         background-color: #f1f1f1; }
@@ -170,7 +173,7 @@
         text-transform: uppercase;
         font-weight: 700;
         border-radius: 5px;
-        top: -6px; }
+        top: -5px; }
     .banner-right .noibat ul {
       padding: 5%; }
       .banner-right .noibat ul .post-item-small {
@@ -195,3 +198,9 @@
             font-size: 11px; }
     .banner-right .noibat ul .post-item-small:last-child {
       border-bottom: none; }
+
+      @media (min-width: 760px) and (max-width:1030px) {
+          .banner-right .tab-wrap .tab-titles li.active{
+            height: 44px;
+          }
+      }

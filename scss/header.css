@@ -7,36 +7,8 @@ header {
   margin: 0;
   padding: 0; }
 
-.header-moblie {
-  display: none; }
-
-.header-wrapper {
-  padding: 22px 0 19px;
-  background-image: url("../images/header-bg.png");
-  background-color: #ffe9bc;
-  background-repeat: repeat;
-  background-position: center; }
-  .header-wrapper .logo {
-    text-align: center;
-    z-index: 11; }
-    .header-wrapper .logo .logo-drums {
-      position: relative;
-      text-align: center; }
-      .header-wrapper .logo .logo-drums .text-in-logo {
-        position: absolute;
-        top: 70px;
-        width: 119px;
-        right: 66px; }
-  .header-wrapper .header-right {
-    margin-top: 60px; }
-    .header-wrapper .header-right .title-header {
-      text-align: center;
-      font-size: 80px; }
-      .header-wrapper .header-right .title-header a {
-        text-decoration: none;
-        color: #fe0002;
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 700; }
+.header-main {
+  width: 100%; }
 
 .menu-fixed.active {
   position: fixed;
@@ -186,6 +158,10 @@ header {
       font-size: 13px;
       cursor: pointer; }
 
+@media (min-width: 1080px) and (max-width: 2040px) {
+  .header-main img {
+    width: 1400px;
+    height: 600px; } }
 @media (min-width: 1024px) and (max-width: 1230px) {
   .menu-wrap .menu-main .navbar .nav-item {
     padding-left: 15px; }
@@ -193,14 +169,6 @@ header {
       display: table;
       font-size: 11px; } }
 @media (min-width: 440px) and (max-width: 768px) {
-  .headline-wrapper {
-    display: none; }
-
-  .header-wrapper .logo-drums {
-    width: 180px; }
-  .header-wrapper .header-right .title-header {
-    font-size: 40px; }
-
   .menu-wrap {
     width: 100%; }
     .menu-wrap .menu-main {
@@ -213,21 +181,6 @@ header {
             display: table;
             font-size: 9px; } }
 @media (min-width: 310px) and (max-width: 442px) {
-  .headline-wrapper {
-    display: none; }
-
-  .header-wrapper {
-    display: none; }
-    .header-wrapper .logo-drums {
-      width: 150px; }
-    .header-wrapper .header-right .title-header {
-      display: none;
-      font-size: 30px; }
-
-  .header-moblie {
-    display: block;
-    padding-bottom: 5px; }
-
   .menu-wrap {
     width: 100%; }
     .menu-wrap .menu-main {

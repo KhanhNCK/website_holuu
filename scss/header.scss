@@ -10,44 +10,9 @@ header {
   margin: 0;
   padding: 0;
 }
-.header-moblie{
-	display: none;
-}
 //header
-.header-wrapper {
-  padding: 22px 0 19px;
-  background-image: url("../images/header-bg.png");
-  background-color: #ffe9bc;
-  background-repeat: repeat;
-  background-position: center;
-  .logo {
-    text-align: center;
-    z-index: 11;
-    .logo-drums {
-      position: relative;
-      text-align: center;
-
-      .text-in-logo {
-        position: absolute;
-        top: 70px;
-        width: 119px;
-        right: 66px;
-      }
-    }
-  }
-  .header-right {
-    margin-top: 60px;
-    .title-header {
-      text-align: center;
-      font-size: 80px;
-      a {
-        text-decoration: none;
-        color: #fe0002;
-        font-family: $font-stack;
-        font-weight: 700;
-      }
-    }
-  }
+.header-main{
+  width: 100%;
 }
 // menu
 
@@ -239,6 +204,15 @@ header {
 // }
 
 //responsive header
+@media (min-width: 1080px) and (max-width: 2040px) {
+  .header-main{
+    img{
+      width: 1400px;
+      height: 600px;
+    }
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1230px) {
   .menu-wrap {
     .menu-main {
@@ -255,19 +229,6 @@ header {
   }
 }
 @media (min-width: 440px) and (max-width: 768px) {
-  .headline-wrapper {
-    display: none;
-  }
-  .header-wrapper {
-    .logo-drums {
-      width: 180px;
-    }
-    .header-right {
-      .title-header {
-        font-size: 40px;
-      }
-    }
-  }
   .menu-wrap {
     width: 100%;
     .menu-main {
@@ -289,25 +250,6 @@ header {
 }
 
 @media (min-width: 310px) and (max-width: 442px) {
-  .headline-wrapper{
-		display: none;
-	}
-	.header-wrapper{
-		display: none;
-		.logo-drums{
-			width: 150px;
-		}
-		.header-right{
-			.title-header{
-				display: none;
-				font-size: 30px;
-			}
-		}
-	}
-	.header-moblie{
-		display: block;
-		padding-bottom: 5px;
-	}
   .menu-wrap {
     width: 100%;
     .menu-main {

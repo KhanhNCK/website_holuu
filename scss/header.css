@@ -3,12 +3,21 @@ body {
   width: 100%;
   overflow-x: hidden; }
 
+.banner {
+  background-image: url("../images/test.png");
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 453px !important;
+  width: 100%; }
+
 header {
   margin: 0;
   padding: 0; }
 
-.header-main {
-  width: 100%; }
+.header-moblie {
+  display: none; }
 
 .menu-fixed.active {
   position: fixed;
@@ -167,7 +176,13 @@ header {
     padding-left: 15px; }
     .menu-wrap .menu-main .navbar .nav-item .nav-link {
       display: table;
-      font-size: 11px; } }
+      font-size: 11px; }
+
+  .banner {
+    min-height: 280px !important; } }
+@media (min-width: 766px) and (max-width: 1023px) {
+  .banner {
+    min-height: 280px !important; } }
 @media (min-width: 440px) and (max-width: 768px) {
   .menu-wrap {
     width: 100%; }
@@ -181,6 +196,12 @@ header {
             display: table;
             font-size: 9px; } }
 @media (min-width: 310px) and (max-width: 442px) {
+  .banner {
+    display: none; }
+
+  .header-moblie {
+    display: block; }
+
   .menu-wrap {
     width: 100%; }
     .menu-wrap .menu-main {

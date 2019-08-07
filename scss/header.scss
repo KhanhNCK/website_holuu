@@ -5,14 +5,24 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+//banner
+	.banner{
+	background-image: url("../images/test.png");
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 453px !important;
+	width: 100%;
+	}
 
 header {
   margin: 0;
   padding: 0;
 }
-//header
-.header-main{
-  width: 100%;
+
+.header-moblie{
+	display: none;
 }
 // menu
 
@@ -227,8 +237,17 @@ header {
       }
     }
   }
+	.banner{
+		min-height: 280px!important;
+	}
+}
+@media (min-width: 766px) and (max-width: 1023px){
+	.banner{
+		min-height: 280px!important;
+	}
 }
 @media (min-width: 440px) and (max-width: 768px) {
+	
   .menu-wrap {
     width: 100%;
     .menu-main {
@@ -250,6 +269,12 @@ header {
 }
 
 @media (min-width: 310px) and (max-width: 442px) {
+	.banner{
+		display: none;
+	}
+	.header-moblie{
+		display: block;
+	}
   .menu-wrap {
     width: 100%;
     .menu-main {
